@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="MerchantAppOpenTableViewCell" customModule="CustomCellForSplash" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETUP STEP 1/2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcf-KC-M0e">
+                        <rect key="frame" x="10" y="10" width="315" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DRD-ZF-3yJ">
+                        <rect key="frame" x="335" y="35" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Oy0-DJ-4n8"/>
+                            <constraint firstAttribute="height" constant="40" id="psd-le-SbM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep your personal Email private" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3e9-hh-Ymb">
+                        <rect key="frame" x="10" y="32" width="315" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="We will create a node email id based off your private id that you can use instead. All your sapn then comes to Node." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZ4-f5-XYk">
+                        <rect key="frame" x="10" y="58" width="315" height="46.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3e9-hh-Ymb" firstAttribute="leading" secondItem="Rcf-KC-M0e" secondAttribute="leading" id="4SZ-Zi-6XI"/>
+                    <constraint firstItem="DRD-ZF-3yJ" firstAttribute="leading" secondItem="Rcf-KC-M0e" secondAttribute="trailing" constant="10" id="7uO-Qk-C5e"/>
+                    <constraint firstItem="Rcf-KC-M0e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="9TL-e3-MQQ"/>
+                    <constraint firstItem="3e9-hh-Ymb" firstAttribute="top" secondItem="Rcf-KC-M0e" secondAttribute="bottom" constant="5" id="BVn-RK-dc4"/>
+                    <constraint firstItem="Rcf-KC-M0e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="NtQ-Lc-Fjs"/>
+                    <constraint firstItem="vZ4-f5-XYk" firstAttribute="trailing" secondItem="3e9-hh-Ymb" secondAttribute="trailing" id="jtt-Yk-Pnp"/>
+                    <constraint firstItem="3e9-hh-Ymb" firstAttribute="trailing" secondItem="Rcf-KC-M0e" secondAttribute="trailing" id="kBS-Fz-d1i"/>
+                    <constraint firstItem="vZ4-f5-XYk" firstAttribute="top" secondItem="3e9-hh-Ymb" secondAttribute="bottom" constant="5" id="lbz-cX-IcR"/>
+                    <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="vZ4-f5-XYk" secondAttribute="bottom" constant="10" id="pdp-o6-zng"/>
+                    <constraint firstAttribute="trailing" secondItem="DRD-ZF-3yJ" secondAttribute="trailing" constant="10" id="q23-bV-UWZ"/>
+                    <constraint firstItem="vZ4-f5-XYk" firstAttribute="leading" secondItem="3e9-hh-Ymb" secondAttribute="leading" id="qwE-l7-SbS"/>
+                    <constraint firstItem="DRD-ZF-3yJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sDP-ae-tww"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="174.61538461538461" y="44.075829383886251"/>
+        </tableViewCell>
+    </objects>
+</document>
