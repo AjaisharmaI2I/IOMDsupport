@@ -8,6 +8,11 @@
 import UIKit
 
 class MerchantAppOpenTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var subtitleLbl: UILabel!
+    @IBOutlet weak var setupStepLbl: UILabel!
+    @IBOutlet weak var sideImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
