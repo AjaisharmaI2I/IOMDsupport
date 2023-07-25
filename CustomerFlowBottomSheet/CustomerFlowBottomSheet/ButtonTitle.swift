@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ButtonTitle : String {
+enum ButtonTitle : String, CaseIterable {
     case howItWorks = "See How is works"
     case enableExtension = "Enable Safari Browser Extension"
     case detecting = "Detecting from brower..."

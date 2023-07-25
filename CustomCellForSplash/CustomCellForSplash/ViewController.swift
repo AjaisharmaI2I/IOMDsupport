@@ -37,12 +37,23 @@ class ViewController: UIViewController {
     
     @objc func onCheckMarkClicked(_ sender: UIButton) {
         myDataArray[sender.tag].isSelected = !myDataArray[sender.tag].isSelected
+        let selectedIndexPath = IndexPath(row: 0, section: sender.tag)
+        
         if myDataArray[sender.tag].isSelected {
             print("selected")
+            saveAndContinueBtn.setTitle("Save And Continue", for: .normal)
         } else {
             print("de-selected")
+            for _ in 0...myDataArray.count {
+                let cell = cSplashTableView.cellForRow(at: selectedIndexPath) as! CSplashTableViewCell
+                if !cell.checkBtn.isSelected {
+                    saveAndContinueBtn.setTitle("Select All", for: .normal)
+                } else {
+                    saveAndContinueBtn.setTitle("Save And Continue", for: .normal)
+                }
+            }
         }
-//        cSplashTableView.reloadData()
+        cSplashTableView.reloadRows(at: [selectedIndexPath], with: .none)
     }
     
     @objc func saveBtnPressed(_ sender: UIButton) {
@@ -50,6 +61,10 @@ class ViewController: UIViewController {
         case "Select All" :
             print("Selected All")
             saveAndContinueBtn.setTitle("Save And Continue", for: .normal)
+            for i in 0...myDataArray.count-1 {
+                myDataArray[i].isSelected = true
+            }
+            cSplashTableView.reloadData()
             break
         case "Save And Continue":
             print("Navigating to next Page")
@@ -94,9 +109,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.titleLbl.text = myDataArray[indexPath.section].titleMessage
             cell.indicatorImageView.image = UIImage(named: myDataArray[indexPath.section].imageName)
             cell.subTitle.text = myDataArray[indexPath.section].subTitleMessage
-            
             cell.checkBtn.tag = indexPath.section
             cell.checkBtn.addTarget(self, action: #selector(onCheckMarkClicked(_:)), for: .touchUpInside)
+            cell.checkBtn.isSelected = myDataArray[indexPath.section].isSelected
             return cell
         case "Save And Continue":
             let cell = tableView.dequeueReusableCell(withIdentifier: "MerchantAppOpenTableViewCell", for: indexPath) as! MerchantAppOpenTableViewCell
