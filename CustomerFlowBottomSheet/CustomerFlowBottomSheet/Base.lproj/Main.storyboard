@@ -78,7 +78,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4S7-Tq-erq">
                                         <rect key="frame" x="0.0" y="40" width="336" height="40"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 391" translatesAutoresizingMaskIntoConstraints="NO" id="zTw-fM-jY0">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Protection" translatesAutoresizingMaskIntoConstraints="NO" id="zTw-fM-jY0">
                                                 <rect key="frame" x="148" y="0.0" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="8Pf-Bq-ZL9"/>
@@ -101,7 +101,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oN-iD-Pq4">
                                         <rect key="frame" x="0.0" y="0.0" width="336" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep your personal email private personalize it to your liking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7h-jF-r77">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep your personal email private personalize it to your liking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7h-jF-r77">
                                                 <rect key="frame" x="0.0" y="0.0" width="336" height="50"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -173,13 +173,12 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use instead of your personal email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33k-89-wQd">
                                                         <rect key="frame" x="0.0" y="0.0" width="336" height="42"/>
-                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="33k-89-wQd" secondAttribute="trailing" id="1rq-dW-fFP"/>
                                                     <constraint firstItem="33k-89-wQd" firstAttribute="leading" secondItem="xcM-hF-Qda" secondAttribute="leading" id="Rd4-PN-6gd"/>
@@ -191,15 +190,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zp6-LX-Ii3">
                                                 <rect key="frame" x="0.0" y="45" width="336" height="42"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save multiple addresses, passwords, cards &amp; more." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrW-sf-qJg">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All messages sent securely to your node." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrW-sf-qJg">
                                                         <rect key="frame" x="0.0" y="0.0" width="336" height="42"/>
-                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <constraints>
                                                     <constraint firstItem="OrW-sf-qJg" firstAttribute="leading" secondItem="zp6-LX-Ii3" secondAttribute="leading" id="YnM-Kq-8m3"/>
                                                     <constraint firstAttribute="trailing" secondItem="OrW-sf-qJg" secondAttribute="trailing" id="a1O-EQ-vC3"/>
@@ -212,13 +210,12 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choice to forward to your personal email." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iur-nJ-wY2">
                                                         <rect key="frame" x="0.0" y="0.0" width="336" height="42"/>
-                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="Iur-nJ-wY2" secondAttribute="trailing" id="7Rx-ys-yEm"/>
                                                     <constraint firstItem="Iur-nJ-wY2" firstAttribute="top" secondItem="haB-mT-btk" secondAttribute="top" id="FJd-ig-7EH"/>
@@ -241,7 +238,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wO7-08-O8X">
                                 <rect key="frame" x="27" y="500.99999999999994" width="336" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="See how it works"/>
+                                <buttonConfiguration key="configuration" style="plain" title="See how it works">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                </buttonConfiguration>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOTTOM LABLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FqW-AQ-11O">
                                 <rect key="frame" x="27" y="540.33333333333337" width="336" height="15.666666666666629"/>
@@ -278,11 +277,13 @@
                     </view>
                     <connections>
                         <outlet property="bottomLbl" destination="Iur-nJ-wY2" id="zX5-ie-S2V"/>
+                        <outlet property="bottomLblContainer" destination="haB-mT-btk" id="IrA-hb-kVM"/>
                         <outlet property="bottomMessageLbl" destination="FqW-AQ-11O" id="sMg-3F-Ifh"/>
                         <outlet property="dragerView" destination="Tx8-mg-OmF" id="Vg9-Y7-ItA"/>
                         <outlet property="emailTF" destination="6vQ-Hw-9xg" id="m8f-mm-qko"/>
                         <outlet property="indicatorImageView" destination="zTw-fM-jY0" id="Fg6-DR-Exk"/>
                         <outlet property="middleLbl" destination="OrW-sf-qJg" id="eCt-Sw-GGW"/>
+                        <outlet property="middleLblContainer" destination="zp6-LX-Ii3" id="R88-jj-Lz0"/>
                         <outlet property="nextBtn" destination="wO7-08-O8X" id="gzv-2m-jEU"/>
                         <outlet property="setupStackContainer" destination="NJ2-DV-deK" id="Xh8-X7-JV8"/>
                         <outlet property="setupStepContainer" destination="NMi-sx-69r" id="9gv-VZ-TGW"/>
@@ -294,6 +295,7 @@
                         <outlet property="textFieldStackContainer" destination="v51-cR-wtq" id="Ewv-vQ-hDl"/>
                         <outlet property="titleLbl" destination="A7h-jF-r77" id="A7c-Sn-e6R"/>
                         <outlet property="topLbl" destination="33k-89-wQd" id="0M3-HC-ZJC"/>
+                        <outlet property="topLblContainer" destination="xcM-hF-Qda" id="erF-Wl-zA1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7v-oN-PWr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -302,7 +304,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Group 391" width="32" height="32"/>
+        <image name="Protection" width="41" height="40.666667938232422"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
