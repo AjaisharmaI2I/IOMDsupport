@@ -105,10 +105,15 @@ class BottomSheetViewController: UIViewController {
             middleLbl.text = "Save multiple addresses, passwords,\ncards & more."
             bottomLbl.text = "Autofill everything you save instantly."
             if let sheet = self.sheetPresentationController {
-                sheet.detents = [.custom(resolver: { context in
+                sheet.detents = [
+                    .custom(resolver: { _ in
+                       return 100
+                   }),
+                    .custom(resolver: { context in
                     return context.maximumDetentValue * 0.55
                 })]
             }
+            MoveIn()
             break
         case ButtonTitle.enableExtension.rawValue:
             nextBtn.setTitle(ButtonTitle.detecting.rawValue, for: .normal)
@@ -116,14 +121,19 @@ class BottomSheetViewController: UIViewController {
             setupStepContainer.isHidden = true
             titleLbl.text = "Enable the Node Safari\nbrowser extension"
             if let sheet = self.sheetPresentationController {
-                sheet.detents = [.custom(resolver: { context in
+                sheet.detents = [
+                    .custom(resolver: { _ in
+                       return 100
+                   }),
+                    .custom(resolver: { context in
                     return context.maximumDetentValue * 0.5
                 })]
             }
             
-            var timer = Timer()
+//            var timer = Timer()
             timer.invalidate()
             timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(autoUpdateButtonTitle), userInfo: nil, repeats: true)
+            MoveIn()
             break
         default:
             break
@@ -147,5 +157,15 @@ class BottomSheetViewController: UIViewController {
         default:
             break
         }
+    }
+    
+    func MoveIn() {        
+        CATransaction.begin()
+        CATransaction.setAnimationDuration(0.65)
+        let trans = CATransition()
+        trans.type = CATransitionType.push
+        trans.subtype = CATransitionSubtype.fromTop
+        self.view.layer.add(trans, forKey: nil)
+        CATransaction.commit()
     }
 }

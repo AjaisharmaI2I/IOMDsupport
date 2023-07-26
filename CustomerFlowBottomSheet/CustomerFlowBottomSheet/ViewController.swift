@@ -22,10 +22,13 @@ class ViewController: UIViewController {
         
         if let sheet = bottomSheetVC.sheetPresentationController {
             sheet.detents = [
+                .custom(resolver: { _ in
+                   return 100
+               }),
                 .custom(resolver: { context in
                     return context.maximumDetentValue * 0.7
 
-            })]
+                })]
             sheet.preferredCornerRadius = 16
         }
         bottomSheetVC.isModalInPresentation = true
