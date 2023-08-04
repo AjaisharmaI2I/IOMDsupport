@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlidingView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oC4-1M-Ovx">
+                                <rect key="frame" x="0.0" y="544" width="390" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXV-ye-D6j">
+                                        <rect key="frame" x="157.66666666666666" y="132.66666666666663" width="75" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Lo9-nr-dyt"/>
+                                    <constraint firstAttribute="width" constant="390" id="URq-cc-uif"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQY-yF-Pkc">
+                                <rect key="frame" x="0.0" y="544" width="390" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osz-s3-EPZ">
+                                        <rect key="frame" x="157.66666666666666" y="132.66666666666663" width="75" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Csq-DD-hYg"/>
+                                    <constraint firstItem="Osz-s3-EPZ" firstAttribute="centerX" secondItem="dQY-yF-Pkc" secondAttribute="centerX" id="TTp-Dd-9wf"/>
+                                    <constraint firstItem="Osz-s3-EPZ" firstAttribute="centerY" secondItem="dQY-yF-Pkc" secondAttribute="centerY" id="dSE-ec-jzV"/>
+                                    <constraint firstAttribute="width" constant="390" id="krk-Cw-CAO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Da0-S7-vWJ">
+                                <rect key="frame" x="0.0" y="544" width="390" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTa-8M-teC">
+                                        <rect key="frame" x="157.66666666666666" y="132.66666666666663" width="75" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="dTa-8M-teC" firstAttribute="centerY" secondItem="Da0-S7-vWJ" secondAttribute="centerY" id="2BB-DR-gXd"/>
+                                    <constraint firstAttribute="height" constant="300" id="3CX-Yy-PrH"/>
+                                    <constraint firstItem="dTa-8M-teC" firstAttribute="centerX" secondItem="Da0-S7-vWJ" secondAttribute="centerX" id="kHk-aw-VrH"/>
+                                    <constraint firstAttribute="width" constant="390" id="oNf-OM-MAE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dik-xX-low">
+                                <rect key="frame" x="0.0" y="544" width="390" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nlb-k4-qmx">
+                                        <rect key="frame" x="157.66666666666666" y="132.66666666666663" width="75" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstItem="Nlb-k4-qmx" firstAttribute="centerY" secondItem="dik-xX-low" secondAttribute="centerY" id="EIX-kc-uAr"/>
+                                    <constraint firstAttribute="height" constant="300" id="FhH-0d-OOZ"/>
+                                    <constraint firstAttribute="width" constant="390" id="KEa-MB-V6y"/>
+                                    <constraint firstItem="Nlb-k4-qmx" firstAttribute="centerX" secondItem="dik-xX-low" secondAttribute="centerX" id="vC6-FH-f4p"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dQY-yF-Pkc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4cd-70-3C5"/>
+                            <constraint firstItem="Da0-S7-vWJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Adq-sd-qUV"/>
+                            <constraint firstItem="dik-xX-low" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="497" id="KWY-5a-6yl"/>
+                            <constraint firstItem="oC4-1M-Ovx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="497" id="PMJ-EJ-lOG"/>
+                            <constraint firstItem="oC4-1M-Ovx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a3T-Ez-d73"/>
+                            <constraint firstItem="dQY-yF-Pkc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="497" id="qEc-jD-9hA"/>
+                            <constraint firstItem="Da0-S7-vWJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="497" id="rbV-9x-3D1"/>
+                            <constraint firstItem="dik-xX-low" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zLy-T9-Iz9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="creatBtn" destination="dTa-8M-teC" id="QSa-xP-vRn"/>
+                        <outlet property="enableBtn" destination="zXV-ye-D6j" id="6Vd-Mo-Xt6"/>
+                        <outlet property="firstView" destination="oC4-1M-Ovx" id="SSz-xT-JNR"/>
+                        <outlet property="firstViewCenterLayout" destination="a3T-Ez-d73" id="HpT-Xm-seW"/>
+                        <outlet property="fourthView" destination="dik-xX-low" id="bc3-39-Dm1"/>
+                        <outlet property="fourthViewCenterLayout" destination="zLy-T9-Iz9" id="un5-9k-SCL"/>
+                        <outlet property="nextBtn" destination="Osz-s3-EPZ" id="URE-ie-k5q"/>
+                        <outlet property="secondView" destination="dQY-yF-Pkc" id="egV-4F-1UH"/>
+                        <outlet property="secondViewCenterLayout" destination="4cd-70-3C5" id="nPq-Qk-1U9"/>
+                        <outlet property="thirdViewCenterLayout" destination="Adq-sd-qUV" id="VY9-8K-9zX"/>
+                        <outlet property="thridView" destination="Da0-S7-vWJ" id="e1t-sU-LrH"/>
+                        <outlet property="viewBtn" destination="Nlb-k4-qmx" id="7cU-HO-uMT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.615384615384613" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
