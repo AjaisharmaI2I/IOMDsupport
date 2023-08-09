@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmailsTableViewCell" rowHeight="66" id="KGk-i7-Jjw" customClass="EmailsTableViewCell" customModule="ForwardSheet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="459" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="459" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1hD-gL-C98">
+                        <rect key="frame" x="30" y="26" width="16" height="14.666666666666671"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="kjz-NP-9Ls"/>
+                            <constraint firstAttribute="height" constant="18" id="mQ8-ap-cGW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aditya.m134@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlP-lw-6eB">
+                        <rect key="frame" x="86.000000000000014" y="24.666666666666671" width="157.33333333333337" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE2-lF-dWL">
+                        <rect key="frame" x="347" y="27" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="RKd-NM-XTX"/>
+                            <constraint firstAttribute="width" constant="12" id="sPl-wR-LqM"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Button" image="radio_deselected">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
+                        </state>
+                        <state key="selected" image="radio_selected"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RlP-lw-6eB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3FV-1H-oFR"/>
+                    <constraint firstItem="1hD-gL-C98" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6c9-lw-NLY"/>
+                    <constraint firstAttribute="trailing" secondItem="CE2-lF-dWL" secondAttribute="trailing" constant="100" id="BUN-bQ-AYz"/>
+                    <constraint firstItem="RlP-lw-6eB" firstAttribute="leading" secondItem="1hD-gL-C98" secondAttribute="trailing" constant="40" id="NCI-1D-aGX"/>
+                    <constraint firstItem="1hD-gL-C98" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="aOP-Kp-8XN"/>
+                    <constraint firstItem="CE2-lF-dWL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="glz-e8-KCR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailLbl" destination="RlP-lw-6eB" id="LCP-de-rAr"/>
+                <outlet property="iconImage" destination="1hD-gL-C98" id="EPU-gF-Hun"/>
+                <outlet property="radioBtn" destination="CE2-lF-dWL" id="pXc-qd-mLo"/>
+            </connections>
+            <point key="canvasLocation" x="80.769230769230759" y="28.436018957345969"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="radio_deselected" width="12" height="12"/>
+        <image name="radio_selected" width="12" height="12"/>
+    </resources>
+</document>
