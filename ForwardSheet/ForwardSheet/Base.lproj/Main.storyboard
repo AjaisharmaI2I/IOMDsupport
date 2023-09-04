@@ -208,6 +208,7 @@
                         <outlet property="messageLbl" destination="bRz-FN-kkr" id="d1D-kE-mEH"/>
                         <outlet property="nodeLbl" destination="MG3-TR-bv3" id="vWh-GO-2oh"/>
                         <outlet property="orLbl" destination="9GQ-K3-tB3" id="Pcw-rD-5LA"/>
+                        <outlet property="orLblTopConstraint" destination="Owv-Ul-y8h" id="PrU-I7-1iA"/>
                         <outlet property="radioBtn" destination="fOQ-RP-xUC" id="fvz-LG-chh"/>
                         <outlet property="rightSeparatorView" destination="8Rq-5G-QXX" id="2wP-FF-bsi"/>
                         <outlet property="separatorView" destination="sdW-Vd-J0K" id="AU8-aS-KFO"/>

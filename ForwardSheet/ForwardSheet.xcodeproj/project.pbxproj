@@ -14,12 +14,12 @@
 		FB1A13422A7D0ED700C0A401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1A13412A7D0ED700C0A401 /* Assets.xcassets */; };
 		FB1A13452A7D0ED700C0A401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1A13432A7D0ED700C0A401 /* LaunchScreen.storyboard */; };
 		FB1A134D2A7D10E000C0A401 /* ForwadrSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1A134C2A7D10E000C0A401 /* ForwadrSheetViewController.swift */; };
-		FB72A08E2A815D3500E82F08 /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72A08D2A815D3500E82F08 /* MyData.swift */; };
 		FB72A0912A815E7500E82F08 /* EmailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB72A08F2A815E7500E82F08 /* EmailsTableViewCell.swift */; };
 		FB72A0922A815E7500E82F08 /* EmailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB72A0902A815E7500E82F08 /* EmailsTableViewCell.xib */; };
-		FB74B6EA2A8129320001892F /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB74B6E82A8129320001892F /* MyTableViewCell.swift */; };
-		FB74B6EB2A8129320001892F /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB74B6E92A8129320001892F /* MyTableViewCell.xib */; };
-		FB94DE572A80FC520005BFF3 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB94DE562A80FC520005BFF3 /* HexColor.swift */; };
+		FB7B86D42A84CC8D00F263F5 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7B86D32A84CC8D00F263F5 /* HexColor.swift */; };
+		FB7B86D62A84CCF800F263F5 /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7B86D52A84CCF800F263F5 /* MyData.swift */; };
+		FB7B86DB2A84CD7400F263F5 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7B86D92A84CD7400F263F5 /* MyTableViewCell.swift */; };
+		FB7B86DC2A84CD7400F263F5 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB7B86DA2A84CD7400F263F5 /* MyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +32,12 @@
 		FB1A13442A7D0ED700C0A401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB1A13462A7D0ED700C0A401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB1A134C2A7D10E000C0A401 /* ForwadrSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwadrSheetViewController.swift; sourceTree = "<group>"; };
-		FB72A08D2A815D3500E82F08 /* MyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyData.swift; path = "../../../Desktop/Ajai Training/AccordionView/TableViewUi/AccordionView/MyData.swift"; sourceTree = "<group>"; };
 		FB72A08F2A815E7500E82F08 /* EmailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailsTableViewCell.swift; sourceTree = "<group>"; };
 		FB72A0902A815E7500E82F08 /* EmailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailsTableViewCell.xib; sourceTree = "<group>"; };
-		FB74B6E82A8129320001892F /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTableViewCell.swift; path = "../../../Desktop/Ajai Training/AccordionView/TableViewUi/AccordionView/MyTableViewCell.swift"; sourceTree = "<group>"; };
-		FB74B6E92A8129320001892F /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyTableViewCell.xib; path = "../../../Desktop/Ajai Training/AccordionView/TableViewUi/AccordionView/MyTableViewCell.xib"; sourceTree = "<group>"; };
-		FB94DE562A80FC520005BFF3 /* HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HexColor.swift; path = "../../../Desktop/IOMD Support/IOMDsupport/UpdatedSheetUI/UpdatedSheetUI/HexColor.swift"; sourceTree = "<group>"; };
+		FB7B86D32A84CC8D00F263F5 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		FB7B86D52A84CCF800F263F5 /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
+		FB7B86D92A84CD7400F263F5 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		FB7B86DA2A84CD7400F263F5 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +70,9 @@
 		FB1A13372A7D0ED600C0A401 /* ForwardSheet */ = {
 			isa = PBXGroup;
 			children = (
+				FB438FF32A84DDFE00A3D32D /* Extensions */,
+				FB438FF22A84DDF100A3D32D /* Model */,
+				FB438FF12A84DDD500A3D32D /* CustomViews */,
 				FB1A13382A7D0ED600C0A401 /* AppDelegate.swift */,
 				FB1A133A2A7D0ED600C0A401 /* SceneDelegate.swift */,
 				FB1A133C2A7D0ED600C0A401 /* ViewController.swift */,
@@ -78,14 +81,35 @@
 				FB1A13412A7D0ED700C0A401 /* Assets.xcassets */,
 				FB1A13432A7D0ED700C0A401 /* LaunchScreen.storyboard */,
 				FB1A13462A7D0ED700C0A401 /* Info.plist */,
-				FB94DE562A80FC520005BFF3 /* HexColor.swift */,
-				FB74B6E82A8129320001892F /* MyTableViewCell.swift */,
-				FB74B6E92A8129320001892F /* MyTableViewCell.xib */,
-				FB72A08D2A815D3500E82F08 /* MyData.swift */,
-				FB72A08F2A815E7500E82F08 /* EmailsTableViewCell.swift */,
-				FB72A0902A815E7500E82F08 /* EmailsTableViewCell.xib */,
 			);
 			path = ForwardSheet;
+			sourceTree = "<group>";
+		};
+		FB438FF12A84DDD500A3D32D /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				FB72A08F2A815E7500E82F08 /* EmailsTableViewCell.swift */,
+				FB72A0902A815E7500E82F08 /* EmailsTableViewCell.xib */,
+				FB7B86D92A84CD7400F263F5 /* MyTableViewCell.swift */,
+				FB7B86DA2A84CD7400F263F5 /* MyTableViewCell.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		FB438FF22A84DDF100A3D32D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB7B86D52A84CCF800F263F5 /* MyData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB438FF32A84DDFE00A3D32D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB7B86D32A84CC8D00F263F5 /* HexColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +170,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7B86DC2A84CD7400F263F5 /* MyTableViewCell.xib in Resources */,
 				FB1A13452A7D0ED700C0A401 /* LaunchScreen.storyboard in Resources */,
-				FB74B6EB2A8129320001892F /* MyTableViewCell.xib in Resources */,
 				FB72A0922A815E7500E82F08 /* EmailsTableViewCell.xib in Resources */,
 				FB1A13422A7D0ED700C0A401 /* Assets.xcassets in Resources */,
 				FB1A13402A7D0ED600C0A401 /* Main.storyboard in Resources */,
@@ -161,14 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB94DE572A80FC520005BFF3 /* HexColor.swift in Sources */,
 				FB1A134D2A7D10E000C0A401 /* ForwadrSheetViewController.swift in Sources */,
+				FB7B86DB2A84CD7400F263F5 /* MyTableViewCell.swift in Sources */,
 				FB72A0912A815E7500E82F08 /* EmailsTableViewCell.swift in Sources */,
 				FB1A133D2A7D0ED600C0A401 /* ViewController.swift in Sources */,
 				FB1A13392A7D0ED600C0A401 /* AppDelegate.swift in Sources */,
 				FB1A133B2A7D0ED600C0A401 /* SceneDelegate.swift in Sources */,
-				FB72A08E2A815D3500E82F08 /* MyData.swift in Sources */,
-				FB74B6EA2A8129320001892F /* MyTableViewCell.swift in Sources */,
+				FB7B86D42A84CC8D00F263F5 /* HexColor.swift in Sources */,
+				FB7B86D62A84CCF800F263F5 /* MyData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

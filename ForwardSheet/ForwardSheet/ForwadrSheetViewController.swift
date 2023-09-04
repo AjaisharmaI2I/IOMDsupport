@@ -19,6 +19,7 @@ class ForwadrSheetViewController: UIViewController {
     @IBOutlet weak var orLbl: UILabel!
     @IBOutlet weak var leftSeparatorView: UIView!
     @IBOutlet weak var rightSeparatorView: UIView!
+    @IBOutlet weak var orLblTopConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var messageLbl: UILabel!
     @IBOutlet weak var emailTextFieldView: UIView!
@@ -34,9 +35,10 @@ class ForwadrSheetViewController: UIViewController {
         super.viewDidLoad()
         myData = [
             MyData(title: "Emails", options: [
-                ["email": "aditya.m134@gmail.com1", "isDefault" : false],
-                ["email": "aditya.m134@gmail.com2", "isDefault" : false],
-                ["email": "aditya.m134@gmail.com3", "isDefault" : false]
+//                ["email": "aditya.m134@gmail.com1", "isDefault" : false]
+//                ,
+//                ["email": "aditya.m134@gmail.com2", "isDefault" : false],
+//                ["email": "aditya.m134@gmail.com3", "isDefault" : false]
         ])
         ]
         
@@ -65,6 +67,62 @@ class ForwadrSheetViewController: UIViewController {
         
         forwardBtn.layer.cornerRadius = forwardBtn.frame.height / 2
         forwardBtn.backgroundColor = UIColor(hex: "#8877F2")
+        forwardBtn.addTarget(self, action: #selector(forwardPresssed), for: .touchUpInside)
+        
+        self.updateUI()
+    }
+    
+    @objc func forwardPresssed() {
+        if let email = emailTF.text {
+            if email.count == 0 {
+                for i in 0..<myData[0].options.count {
+                    if myData[0].options[i]["email"] as? String == email {
+                        print("email already exists")
+                    } else {
+                        myData[0].options.append(["email" : email, "isDefault" : false])
+                    }
+                }
+                self.updateUI()
+            }
+        }
+        
+        
+    }
+    
+    func updateUI() {
+        for i in 0..<myData.count {
+            if myData[i].options.count == 0 {
+                emailListView.isHidden = true
+            } else {
+                emailListView.isHidden = false
+            }
+        }
+        
+        if emailListView.isHidden {
+            if let sheet = self.sheetPresentationController {
+                if #available(iOS 16.0, *) {
+                    sheet.detents = [.custom(resolver: { _ in
+                        return 350
+                    })]
+                }
+                orLbl.isHidden = true
+                leftSeparatorView.isHidden = true
+                rightSeparatorView.isHidden = true
+                orLblTopConstraint.constant = 30
+                orLbl.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+            }
+        } else {
+            if let sheet =  self.sheetPresentationController {
+                if #available(iOS 16.0, *) {
+                    sheet.detents = [.medium()]
+                }
+                orLbl.isHidden = false
+                leftSeparatorView.isHidden = false
+                rightSeparatorView.isHidden = false
+                orLblTopConstraint.constant = 145
+                orLbl.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
+            }
+        }
     }
 }
 
@@ -104,16 +162,21 @@ extension ForwadrSheetViewController: UITableViewDelegate, UITableViewDataSource
             
             let options = myData[0].options
             
-            for op in options {
-                if op["isDefault"] as? Bool == true {
-                    headCell.selectedOptLbl.text = op["email"] as? String
-                    break
+            if options.count == 1 {
+                headCell.selectedOptLbl.text = myData[indexPath.section].options[indexPath.row]["email"] as? String
+            } else {
+                for op in options {
+                    if op["isDefault"] as? Bool == true {
+                        headCell.selectedOptLbl.text = op["email"] as? String
+                        break
+                    }
                 }
+                headCell.dropDownBtn.addTarget(self, action: #selector(dropDownPressed), for: .touchUpInside)
             }
             headCell.descLbl.textColor = UIColor(hex: "#8877F2")
             headCell.iconImage.tintColor = UIColor(hex: "#8877F2")
             headCell.radioBtn.isHidden = true
-            headCell.dropDownBtn.addTarget(self, action: #selector(dropDownPressed), for: .touchUpInside)
+            
             return headCell
         } else {
             let emailsCell = tableView.dequeueReusableCell(withIdentifier: "EmailsTableViewCell", for: indexPath) as! EmailsTableViewCell
@@ -140,6 +203,8 @@ extension ForwadrSheetViewController: UITableViewDelegate, UITableViewDataSource
     @objc func emailSelected(_ sender: UIButton) {
         let indexPath = IndexPath(row: sender.tag, section: 0)
         
+        print(indexPath.count)
+        
         myData[indexPath.section].isExpanded = !myData[indexPath.section].isExpanded
         changeTableViewHeight(section: indexPath.section)
         
@@ -163,13 +228,19 @@ extension ForwadrSheetViewController: UITableViewDelegate, UITableViewDataSource
         let indexPath = IndexPath(row: 0, section: section)
         let headCell = emailListView.cellForRow(at: indexPath) as! MyTableViewCell
         
+        let optionsCount = myData[indexPath.section].options.count
+        
         if myData[section].isExpanded {
-            emailListViewHeightConstrait.constant = 15
-            headCell.radioBtn.isHidden = false
-            orLbl.isHidden = true
-            leftSeparatorView.isHidden = true
-            rightSeparatorView.isHidden = true
-            emailListView.reloadData()
+            if optionsCount == 1 {
+                
+            } else {
+                emailListViewHeightConstrait.constant = 15
+                headCell.radioBtn.isHidden = false
+                orLbl.isHidden = true
+                leftSeparatorView.isHidden = true
+                rightSeparatorView.isHidden = true
+                emailListView.reloadData()
+            }
         } else {
             emailListViewHeightConstrait.constant = 193
             orLbl.isHidden = false
