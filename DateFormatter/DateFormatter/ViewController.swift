@@ -21,10 +21,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        let date = Date()
-        let dateformatter = DateFormatter()
-        dateformatter.dateFormat = "dd/MM/yyyy"
-        dateLable.text = dateformatter.string(from: date)
+////        let date = Date()
+//         = dateformatter.string(from: date)
         
         indBtn.addTarget(self, action: #selector(changeDateFormat), for: .touchUpInside)
         ukBtn.addTarget(self, action: #selector(changeDateFormat), for: .touchUpInside)
@@ -36,22 +34,15 @@ class ViewController: UIViewController {
     @objc func changeDateFormat(_ sender: UIButton) {
         
         var dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yyyy"
         
+        let countryOrRegion = Locale.current
+        print(countryOrRegion)
+        dateFormatter.locale = countryOrRegion
+        dateFormatter.dateStyle = .short
         
-        switch sender.titleLabel?.text {
-            
-        case "India", "FR":
-            dateFormatter.dateFormat = "dd/MM/yyyy"
-        case "US", "UK":
-            dateFormatter.dateFormat = "MM/dd/yyyy"
-        default:
-            dateFormatter.dateFormat = "dd/MM/yyyy"
-            break
-        }
-        
-        print(dateFormatter.string(from: date))
-        dateLable.text = dateFormatter.string(from: date)
+        let formatedDate = dateFormatter.string(from: date)
+        print(formatedDate)
+        dateLable.text = formatedDate
     }
     
 }
