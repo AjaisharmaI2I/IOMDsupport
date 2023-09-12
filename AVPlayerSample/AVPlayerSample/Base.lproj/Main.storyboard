@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AVPlayerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COR-Vg-RUx">
+                                <rect key="frame" x="30" y="217" width="330" height="543"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZX7-l3-jBn">
+                                        <rect key="frame" x="12" y="12" width="306" height="398.66666666666669"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGQ-0l-ZiN">
+                                        <rect key="frame" x="105" y="483.66666666666663" width="120" height="34.333333333333371"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Maybe later">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faG-ce-7Ma">
+                                        <rect key="frame" x="105.66666666666666" y="430.66666666666663" width="119" height="38"/>
+                                        <color key="backgroundColor" red="0.14752579839999999" green="0.95388880460000003" blue="0.59687089579999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Let's try it">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="LGQ-0l-ZiN" firstAttribute="top" secondItem="faG-ce-7Ma" secondAttribute="bottom" constant="15" id="9Z3-cy-8pv"/>
+                                    <constraint firstAttribute="bottom" secondItem="LGQ-0l-ZiN" secondAttribute="bottom" constant="25" id="Hlg-ML-Btk"/>
+                                    <constraint firstItem="ZX7-l3-jBn" firstAttribute="top" secondItem="COR-Vg-RUx" secondAttribute="top" constant="12" id="I9h-de-c5o"/>
+                                    <constraint firstItem="LGQ-0l-ZiN" firstAttribute="centerX" secondItem="COR-Vg-RUx" secondAttribute="centerX" id="Ml0-zF-HxQ"/>
+                                    <constraint firstItem="faG-ce-7Ma" firstAttribute="top" secondItem="ZX7-l3-jBn" secondAttribute="bottom" constant="20" id="N1m-AK-htk"/>
+                                    <constraint firstItem="faG-ce-7Ma" firstAttribute="centerX" secondItem="COR-Vg-RUx" secondAttribute="centerX" id="bn7-0y-1XW"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZX7-l3-jBn" secondAttribute="trailing" constant="12" id="nVh-cj-ykq"/>
+                                    <constraint firstItem="ZX7-l3-jBn" firstAttribute="leading" secondItem="COR-Vg-RUx" secondAttribute="leading" constant="12" id="sQk-M6-2jr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="COR-Vg-RUx" secondAttribute="bottom" constant="50" id="BjQ-6q-Rhg"/>
+                            <constraint firstItem="COR-Vg-RUx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Q9i-5z-Eyc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="COR-Vg-RUx" secondAttribute="trailing" constant="30" id="UHQ-mb-UX7"/>
+                            <constraint firstItem="COR-Vg-RUx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="koU-4m-hcg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="COR-Vg-RUx" id="7nl-X9-N0r"/>
+                        <outlet property="laterBtn" destination="LGQ-0l-ZiN" id="2rO-F2-YgZ"/>
+                        <outlet property="playerView" destination="ZX7-l3-jBn" id="KYu-Fa-crz"/>
+                        <outlet property="tryItBtn" destination="faG-ce-7Ma" id="grd-V5-Ebc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
